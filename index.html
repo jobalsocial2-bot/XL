@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flores para meu amor</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}body{min-height:100vh;overflow:hidden;display:grid;place-items:end center;background:#020204;color:#fff;font-family:Georgia,'Times New Roman',serif}.night{position:fixed;inset:0;background:radial-gradient(circle at 50% 88%,rgba(74,208,120,.24),transparent 28%),radial-gradient(circle at 30% 15%,rgba(255,92,146,.18),transparent 18%),linear-gradient(#020204 0%,#071018 58%,#020604 100%)}.stars{position:fixed;inset:0;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:42px 42px;opacity:.18;animation:twinkle 5s infinite alternate}.garden{position:relative;width:min(920px,100vw);height:min(680px,92vh);isolation:isolate}.ground{position:absolute;left:50%;bottom:-10vmin;width:120vmin;height:24vmin;transform:translateX(-50%);border-radius:50%;background:radial-gradient(ellipse at center,#174d26 0%,#061308 62%,transparent 70%);filter:blur(.3vmin)}.flower{--x:0;--h:52vmin;--r:0deg;--c:#ff4f6f;--c2:#9e0622;position:absolute;left:50%;bottom:6vmin;width:8vmin;height:var(--h);transform:translateX(var(--x)) rotate(var(--r));transform-origin:bottom center;animation:grow 1.4s both,sway 4s 1.4s infinite ease-in-out;z-index:2}.stem{position:absolute;bottom:0;left:50%;width:1.1vmin;height:calc(var(--h) - 8vmin);transform:translateX(-50%);border-radius:1vmin;background:linear-gradient(90deg,#0b5d31,#37bd64,#0b5d31)}.leaf{position:absolute;bottom:14vmin;width:12vmin;height:5vmin;border-radius:0 100% 0 100%;background:linear-gradient(135deg,#188540,#73df7d);opacity:.9}.leaf.l{left:-6vmin;transform:rotate(-24deg)}.leaf.r{right:-6vmin;transform:rotate(204deg)}.tulip .head{position:absolute;top:0;left:50%;width:10vmin;height:11vmin;transform:translateX(-50%);border-radius:52% 52% 40% 40%/65% 65% 34% 34%;background:linear-gradient(145deg,#ffd2dd,var(--c),var(--c2));box-shadow:0 0 2vmin color-mix(in srgb,var(--c) 55%,transparent);overflow:hidden}.tulip .head:before,.tulip .head:after{content:"";position:absolute;top:-1vmin;width:5.6vmin;height:10vmin;border-radius:55% 55% 36% 36%;background:linear-gradient(160deg,#fff0f4,var(--c))}.tulip .head:before{left:.2vmin;transform:rotate(-22deg)}.tulip .head:after{right:.2vmin;transform:rotate(22deg)}.rose .head{position:absolute;top:0;left:50%;width:10.8vmin;height:10.8vmin;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle at 50% 48%,#fff 0 8%,var(--c) 9% 24%,transparent 25%),conic-gradient(from 20deg,var(--c2),var(--c),#ffd2dd,var(--c),var(--c2));box-shadow:0 0 2vmin rgba(255,80,130,.5)}.rose .head:before,.rose .head:after{content:"";position:absolute;inset:1.4vmin;border:.8vmin solid rgba(255,255,255,.28);border-left-color:rgba(60,0,15,.25);border-radius:50%;transform:rotate(28deg)}.rose .head:after{inset:3vmin;transform:rotate(-36deg)}.main-flower{--x:-4vmin;--h:68vmin;--r:0deg;--c:#8fffea;--c2:#2da99f;z-index:3}.main-flower .head{border-radius:51% 49% 47% 53%/44% 45% 55% 69%;background:linear-gradient(to top,var(--c2),var(--c));box-shadow:inset 0 0 2vmin rgba(255,255,255,.5),0 0 3vmin rgba(100,255,240,.45)}.main-flower .head:before{content:"";position:absolute;left:50%;top:52%;width:4.5vmin;height:4.5vmin;transform:translate(-50%,-50%);border-radius:50%;background:#ffd429}.f1{--x:-34vmin;--h:37vmin;--r:-12deg;--c:#e82142;--c2:#850517}.f2{--x:-20vmin;--h:31vmin;--r:8deg;--c:#ff77ad;--c2:#b6105f}.f3{--x:22vmin;--h:34vmin;--r:14deg;--c:#d91f3d;--c2:#800519}.f4{--x:36vmin;--h:42vmin;--r:-7deg;--c:#ff67a5;--c2:#b70f61}.f5{--x:8vmin;--h:55vmin;--r:17deg;--c:#ff405c;--c2:#92091f}.note-button{position:fixed;top:4vmin;left:50%;z-index:10;transform:translateX(-50%);border:1px solid rgba(255,190,205,.8);border-radius:999px;padding:.9rem 1.4rem;color:#fff;background:linear-gradient(135deg,#b91535,#ff6f9d);box-shadow:0 0 1.6rem rgba(255,80,130,.35);font:700 1rem Georgia,'Times New Roman',serif;cursor:pointer}.note{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:1rem;background:rgba(0,0,0,.68);opacity:0;pointer-events:none;transition:.25s}.note.open{opacity:1;pointer-events:auto}.card{position:relative;width:min(42rem,calc(100vw - 2rem));max-height:78vh;overflow:auto;border:1px solid rgba(255,210,220,.9);border-radius:8px;padding:2.2rem;color:#351016;background:linear-gradient(#fffafd,#ffe5ec);box-shadow:0 2rem 6rem rgba(0,0,0,.5);line-height:1.65}.card h1{margin-bottom:1rem;color:#ad1536;font-size:1.8rem}.card p{margin-bottom:1rem}.close{position:sticky;top:0;float:right;width:2.1rem;height:2.1rem;margin:-1.2rem -1.2rem .4rem 1rem;border:0;border-radius:50%;color:#fff;background:#ba173d;font-size:1.5rem;cursor:pointer}@keyframes grow{from{transform:translateX(var(--x)) rotate(var(--r)) scaleY(0);opacity:0}}@keyframes sway{0%,100%{rotate:0deg}50%{rotate:4deg}}@keyframes twinkle{to{opacity:.32}}@media(max-width:640px){.garden{height:84vh}.flower{scale:.82}.f1{--x:-28vmin}.f2{--x:-13vmin}.f3{--x:14vmin}.f4{--x:29vmin}.f5{--x:4vmin}.note-button{top:1rem;font-size:.92rem}.card{padding:1.55rem}.card p{font-size:.94rem;line-height:1.55}}
+  </style>
+</head>
+<body>
+  <div class="night"></div><div class="stars"></div>
+  <button class="note-button" type="button" aria-expanded="false">Abrir mensagem</button>
+  <section class="note" aria-hidden="true">
+    <article class="card" role="dialog" aria-modal="true" aria-labelledby="titulo">
+      <button class="close" type="button" aria-label="Fechar mensagem">×</button>
+      <h1 id="titulo">Amor,</h1>
+      <p>Eu sei que errei nas flores do Dia dos Namorados, e isso ficou no meu coração porque você merece muito mais do que presentes em datas especiais. Você merece ser lembrada, valorizada e amada todos os dias.</p>
+      <p>Às vezes a gente falha nos detalhes, mas quero que você nunca duvide do tamanho do meu amor por você. Você trouxe mais cor para a minha vida, mais paz para os meus dias e mais sentido para os meus sonhos. Seu sorriso é o lugar onde eu encontro felicidade, e seu abraço é onde eu sempre quero estar.</p>
+      <p>Por isso, hoje eu não quero apenas pedir desculpas. Quero renovar uma promessa: a de cuidar de você, de te admirar e de demonstrar meu amor cada vez mais.</p>
+      <p>Vou sempre te encher de flor, minha flor.</p>
+      <p>Porque nenhuma rosa é tão bonita quanto o brilho dos seus olhos, nenhuma primavera é tão especial quanto a sua presença na minha vida, e nenhum jardim seria capaz de reunir toda a beleza que eu vejo em você.</p>
+      <p>Eu te amo, hoje, amanhã e em todos os dias que ainda vamos viver juntos. ❤️</p>
+    </article>
+  </section>
+  <main class="garden" aria-label="Jardim de flores">
+    <div class="ground"></div>
+    <div class="flower tulip f1"><div class="stem"></div><div class="leaf l"></div><div class="leaf r"></div><div class="head"></div></div>
+    <div class="flower rose f2"><div class="stem"></div><div class="leaf l"></div><div class="head"></div></div>
+    <div class="flower rose f3"><div class="stem"></div><div class="leaf r"></div><div class="head"></div></div>
+    <div class="flower tulip f4"><div class="stem"></div><div class="leaf l"></div><div class="leaf r"></div><div class="head"></div></div>
+    <div class="flower tulip f5"><div class="stem"></div><div class="leaf l"></div><div class="leaf r"></div><div class="head"></div></div>
+    <div class="flower main-flower"><div class="stem"></div><div class="leaf l"></div><div class="leaf r"></div><div class="head"></div></div>
+  </main>
+  <script>
+    const btn=document.querySelector('.note-button'),note=document.querySelector('.note'),close=document.querySelector('.close');
+    function openNote(open){note.classList.toggle('open',open);note.setAttribute('aria-hidden',String(!open));btn.setAttribute('aria-expanded',String(open));}
+    btn.addEventListener('click',()=>openNote(true));close.addEventListener('click',()=>openNote(false));note.addEventListener('click',e=>{if(e.target===note)openNote(false)});document.addEventListener('keydown',e=>{if(e.key==='Escape')openNote(false)});
+  </script>
+</body>
+</html>
